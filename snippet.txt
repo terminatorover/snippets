@@ -1,0 +1,17 @@
+  NSOperationQueue *<#operationQueue#> = [[NSOperation alloc]init];
+    NSBlockOperation *<#blockOperation#> = [[NSBlockOperation alloc]init];
+    __weak  NSBlockOperation *weakBlockOperation = <#blockOperation#>;
+    [<#blockOperation#> addExecutionBlock:^void {
+        if(![weakBlockOperation isCanceld])
+        {
+            //do you work work here.
+        }
+        
+    }];
+    
+    [<#operationQueueu#> addOperation:<#blockOperation#>];
+    
+    
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        
+    }];
